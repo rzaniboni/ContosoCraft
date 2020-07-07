@@ -11,10 +11,10 @@ using Microsoft.Extensions.Logging;
 namespace ContosoCraft.WebSite.Pages {
   public class IndexModel : PageModel {
     private readonly ILogger<IndexModel> _logger;
-    public readonly JsonFileProductsService ProductService;
+    public readonly JsonFileProductService ProductService;
     public IEnumerable<Product> Products { get; private set; }
 
-    public IndexModel (ILogger<IndexModel> logger, JsonFileProductsService productService) {
+    public IndexModel (ILogger<IndexModel> logger, JsonFileProductService productService) {
 
       _logger = logger;
       ProductService = productService;

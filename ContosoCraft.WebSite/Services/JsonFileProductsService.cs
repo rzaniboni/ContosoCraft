@@ -6,11 +6,10 @@ using ContosoCraft.WebSite.Models;
 using Microsoft.AspNetCore.Hosting;
 
 namespace ContosoCraft.WebSite.Services {
-  public class JsonFileProductsService {
+  public class JsonFileProductService {
 
-    public JsonFileProductsService (IWebHostEnvironment webHostEnvironment) {
+    public JsonFileProductService (IWebHostEnvironment webHostEnvironment) {
       this.WebHostEnvironment = webHostEnvironment;
-
     }
     public IWebHostEnvironment WebHostEnvironment { get; }
 
